@@ -64,9 +64,9 @@ def create_accounts():
 # ... place you code here to LIST accounts ...
 
 
-##########################################################>
+##########################################################
 # READ AN ACCOUNT
-##########################################################>
+##########################################################
 
 # ... place you code here to READ an account ...
 @app.route("/accounts/<int:account_id>", methods=["GET"])
