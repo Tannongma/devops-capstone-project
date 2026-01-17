@@ -1,0 +1,33 @@
+(venv) theia:devops-capstone-project$ gh run list
+STATUS  NAME                          WORKFLOW             BRANCH  EVENT  ID           ELAPSED  AGE
+✓       Update routes.py              CI Build             main    push   21073240856  46s      18m
+✓       Refactor comments in rout...  CI Build             main    push   21072780276  46s      34m
+X       Add build status badge to...  CI Build             main    push   21072261409  18m54s   52m
+X       Refactor CI build workflo...  CI Build             main    push   21072155395  28m51s   56m
+X       Include flake8 linting in...  CI Build             main    push   21071891026  19s      1h
+X       Add health check options ...  CI Build             main    push   21071695860  1m10s    1h
+X       Configure CI build with P...  .github/workflow...  main    push   21071323677  0s       1h
+X       Update ci-build.yaml          .github/workflow...  main    push   21069977146  0s       2h
+X       Create ci-build.yaml          .github/workflow...  main    push   21069878915  0s       2h
+
+For details on a run, try: gh run view <run-id>
+(venv) theia:devops-capstone-project$ gh run view 21073240856  --verbose
+
+✓ main CI Build · 21073240856
+Triggered via push about 19 minutes ago
+
+JOBS
+✓ build in 43s (ID 60608306533)
+  ✓ Set up job
+  ✓ Initialize containers
+  ✓ Checkout
+  ✓ Install dependencies
+  ✓ Lint with flake8
+  ✓ Run unit tests with nose
+  ✓ Post Checkout
+  ✓ Stop containers
+  ✓ Complete job
+
+For more information about a job, try: gh run view --job=<job-id>
+View this run on GitHub: https://github.com/Tannongma/devops-capstone-project/actions/runs/21073240856
+(venv) theia:devops-capstone-project$ 
